@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header translucent>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding >
 <form>
   <ion-item lines="full">
     <ion-label position="floating">Correo electronico</ion-label>
@@ -21,7 +21,7 @@
 
   <ion-row>
     <ion-col>
-      <ion-button type="submit" color="danger" expand="block">Ingresar</ion-button>
+      <ion-button type="button" routerLink="/menu" color="primary" expand="block">Ingresar</ion-button>
       <a [routerLink]="['/forgot-password']" class="small-text">¿Perdiste la contraseña?</a>
       
     </ion-col>

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "tienda-merch": {
+      "hosting": {
+        "app": [
+          "tienda-merch"
+        ]
+      }
+    }
+  }
+}
