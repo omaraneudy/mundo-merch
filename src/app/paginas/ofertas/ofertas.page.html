@@ -1,7 +1,9 @@
 <<ion-header>
   <ion-toolbar>
-    
-    <ion-title size="large">Ofertas</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title >Mundo Merch</ion-title>
   </ion-toolbar>
   <ion-toolbar>    
     <ion-searchbar mode="md" placeholder="Busca camisetas, abrigos, tazas... " ></ion-searchbar>
@@ -9,64 +11,60 @@
 </ion-header>
 
 <ion-content>
-  <ion-card>
-    <ion-item>
-      <ion-icon name="pin" slot="start"></ion-icon>
-      <ion-label>Nuevos productos</ion-label>
-      <ion-button fill="outline" slot="end">View</ion-button>
-    </ion-item>
-  
-    <ion-card-content>
-      Los productos más recientes para que estés al dia con la moda
-    </ion-card-content>
-  </ion-card>
+
+  <ion-item>
+    <h1>Ofertas</h1>
+  </ion-item>
+
+  <ion-item-divider>
+    <ion-label>
+      <ion-chip color="primary">
+        <ion-label color="dark">Abrigos</ion-label>
+      </ion-chip>
+    </ion-label>
+  </ion-item-divider>
+
+
 
 
   <ion-card>
     <ion-img src="assets/images/abrigo_tierra.jpg"></ion-img>
     <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>    
-      <ion-item>
+      <ion-card-subtitle>RD$750</ion-card-subtitle>
+      <ion-card-title>Abrigo Logo Tierra</ion-card-title>    
+      
+    </ion-card-header>
+    <ion-item>
         <ion-button color="primary" slot="end">Comprar</ion-button>
       </ion-item>
-    </ion-card-header>
 
   </ion-card>
 
   <ion-card>
-    <ion-img src="assets/images/abrigo_tierra.jpg"></ion-img>
+    <ion-img src="assets/images/abrigo_negro_noche.jpg"></ion-img>
     <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>    
-      <ion-item>
+      <ion-card-subtitle>RD$650</ion-card-subtitle>
+      <ion-card-title>Abrigo Negro noche</ion-card-title>    
+      
+    </ion-card-header>
+    <ion-item>
         <ion-button color="primary" slot="end">Comprar</ion-button>
       </ion-item>
-    </ion-card-header>
 
   </ion-card>
 
-  <ion-card>
-    <ion-item>
-      <ion-icon name="pin" slot="start"></ion-icon>
-      <ion-label>Lo más vendido</ion-label>
-      <ion-button fill="outline" slot="end">View</ion-button>
-    </ion-item>
-  
-    <ion-card-content>
-      Los productos más vendidos de la semana
-    </ion-card-content>
-  </ion-card>
+
   
   <ion-card>
-    <ion-img src="assets/images/abrigo_tierra.jpg"></ion-img>
+    <ion-img src="assets/images/camiseta_palmera.jpg"></ion-img>
     <ion-card-header>
-      <ion-card-subtitle>RD$200</ion-card-subtitle>
-      <ion-card-title>Abrigo Tierra </ion-card-title>    
-      <ion-item>
+      <ion-card-subtitle>RD$450</ion-card-subtitle>
+      <ion-card-title>Camiseta palmera</ion-card-title>    
+      
+    </ion-card-header>
+    <ion-item>
         <ion-button color="primary" slot="end" routerLink="/categorias">Comprar</ion-button>
       </ion-item>
-    </ion-card-header>
 
   </ion-card>
 
@@ -75,35 +73,27 @@
     <ion-card-header>
       <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
       <ion-card-title>Card Title</ion-card-title>    
-      <ion-item>
-        <ion-button color="primary" slot="end">Comprar</ion-button>
-      </ion-item>
+      
     </ion-card-header>
-
-  </ion-card>
-
-  <ion-card>
     <ion-item>
-      <ion-icon name="pin" slot="start"></ion-icon>
-      <ion-label>Segun tus gustos</ion-label>
-      <ion-button fill="outline" slot="end">View</ion-button>
+      <ion-button color="primary" slot="end" routerLink="/categorias">Comprar</ion-button>
     </ion-item>
-  
-    <ion-card-content>
-      Échale un ojo a estos productos que te pueden gustar
-    </ion-card-content>
   </ion-card>
+
+
   
   <ion-card>
     <ion-img src="assets/images/abrigo_tierra.jpg"></ion-img>
     <ion-card-header>
-      <ion-card-subtitle>RD$200</ion-card-subtitle>
+      <ion-card-subtitle >RD$200</ion-card-subtitle>
       <ion-card-title>Abrigo Tierra </ion-card-title>    
-      <ion-item>
+      <ion-text slot="end">
         <ion-button color="primary" slot="end" routerLink="/categorias">Comprar</ion-button>
-      </ion-item>
+      </ion-text>
     </ion-card-header>
-
+    <ion-item>
+      <ion-button color="primary" slot="end" routerLink="/categorias">Comprar</ion-button>
+    </ion-item>
   </ion-card>
 
 

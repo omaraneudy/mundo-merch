@@ -3,28 +3,38 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>login</ion-title>
+    <ion-title>Mundo Merch</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding >
-<form>
-  <ion-item lines="full">
-    <ion-label position="floating">Correo electronico</ion-label>
-    <ion-input type="text" required></ion-input>
+  <ion-item>
+    <h1>Iniciar sesión</h1>
   </ion-item>
+  <ion-item-divider >
+    <ion-label>
 
-  <ion-item lines="full">
-    <ion-label position="floating">Contraseña</ion-label>
-    <ion-input type="password" required></ion-input>
-  </ion-item>
-
-  <ion-row>
-    <ion-col>
-      <ion-button type="button" routerLink="/menu/principal" color="primary" expand="block">Ingresar</ion-button>
-      <a [routerLink]="['/forgot-password']" class="small-text">¿Perdiste la contraseña?</a>
-      
-    </ion-col>
-  </ion-row>
-</form>
+    </ion-label>
+  </ion-item-divider>
+<ion-card>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Correo electronico</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+  
+    <ion-item lines="full">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+  
+    <ion-row>
+      <ion-col>
+        <ion-button type="button" routerLink="/menu/principal" color="primary" expand="block">Ingresar</ion-button>
+        <a [routerLink]="['/forgot-password']" class="small-text">¿Perdiste la contraseña?</a>
+        
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-card>
 </ion-content>
