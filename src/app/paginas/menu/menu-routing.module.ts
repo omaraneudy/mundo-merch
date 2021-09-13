@@ -18,6 +18,21 @@ const routes: Routes = [
         path: 'categoria',
         loadChildren: () => import('../categorias/categorias.module').then(m => m.CategoriasPageModule)
       },
+
+      {
+        path: 'ofertas',
+        loadChildren: () => import('../ofertas/ofertas.module').then(m => m.OfertasPageModule)
+      },
+
+      {
+        path: 'carrito',
+        loadChildren: () => import('../carrito/carrito.module').then(m => m.CarritoPageModule)
+      },
+      {
+        path: 'cuenta',
+        loadChildren: () => import('../cuenta/cuenta.module').then(m => m.CuentaPageModule)
+      },
+
       {
         path: '',
         redirectTo: '/menu/principal',
