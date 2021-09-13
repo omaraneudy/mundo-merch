@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Carrito</ion-title>
+    <ion-title>Mundo Merch</ion-title>
   </ion-toolbar>
   <ion-toolbar>    
     <ion-searchbar mode="md" placeholder="Busca camisetas, abrigos, tazas... " ></ion-searchbar>
@@ -17,17 +17,64 @@
     <ion-label>
       Basic Item Divider
     </ion-label>
+    <ion-button size="small" slot="end" color="danger">Quitar producto</ion-button>
   </ion-item-divider>
 <!-- Item as a Button -->
-<ion-item button (click)="buttonClick()" >
-  <ion-thumbnail slot="start" href="principal">
-    <img src="assets/images/cat_camiseta.jpg">
-  </ion-thumbnail>
-  <ion-label>
-    Button Item
-  </ion-label>
-          <ion-text slot="end" size="medium">RD$300</ion-text>
-</ion-item>
+  <ion-card>
+    <ion-item button (click)="buttonClick()" >
+      <ion-checkbox slot="start" color="light"></ion-checkbox>
+      <ion-thumbnail slot="start" href="principal">
+        <img src="assets/images/cat_camiseta.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        Camiseta negra
+      </ion-label>
+      <!--class="ion-text-wrap"-->
+              <ion-text slot="end" size="medium">RD$300</ion-text>
+    </ion-item>
+    
+    <ion-item button (click)="buttonClick()" >
+      <ion-checkbox slot="start" color="light"></ion-checkbox>
+      <ion-thumbnail slot="start" href="principal">
+        <img src="assets/images/camiseta_blanca.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        Camiseta blanca
+      </ion-label>
+              <ion-text slot="end" size="medium">RD$250</ion-text>
+    </ion-item>
+    <ion-item button (click)="buttonClick()" >
+      <ion-checkbox slot="start" color="light"></ion-checkbox>
+      <ion-thumbnail slot="start" href="principal">
+        <img src="assets/images/abrigo_tierra.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        Abrigo Logo Tierra
+      </ion-label>
+              <ion-text slot="end" size="medium">RD$750</ion-text>
+    </ion-item>
+    <ion-item button (click)="buttonClick()" >
+      <ion-checkbox slot="start" color="light"></ion-checkbox>
+      <ion-thumbnail slot="start" href="principal">
+        <img src="assets/images/abrigo_negro_noche.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        Abrigo Negro noche
+      </ion-label>
+              <ion-text slot="end" size="medium">RD$650</ion-text>
+    </ion-item>
+    <ion-item button (click)="buttonClick()" >
+      <ion-checkbox slot="start" color="light"></ion-checkbox>
+      <ion-thumbnail slot="start" href="principal">
+        <img src="assets/images/camiseta_palmera.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        Camiseta palmera
+      </ion-label>
+              <ion-text slot="end" size="medium">RD$450</ion-text>
+    </ion-item>
+  </ion-card>
+
 <ion-item-divider color="warning">
   <ion-label>
     Secondary Item Divider
