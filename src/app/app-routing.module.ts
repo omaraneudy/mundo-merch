@@ -51,6 +51,42 @@ const routes: Routes = [
     path: 'menu',
     loadChildren: () => import('./paginas/menu/menu.module').then( m => m.MenuPageModule)
   },
+  {
+    path: 'detalle-abrigo',
+    loadChildren: () => import('./paginas/detalle/detalle-abrigo/detalle-abrigo.module').then( m => m.DetalleAbrigoPageModule)
+  },
+  {
+    path: 'detalle-camiseta',
+    loadChildren: () => import('./paginas/detalle-camiseta/detalle-camiseta.module').then( m => m.DetalleCamisetaPageModule)
+  },
+  {
+    path: 'detalle-gorra',
+    loadChildren: () => import('./paginas/detalle-gorra/detalle-gorra.module').then( m => m.DetalleGorraPageModule)
+  },
+  {
+    path: 'detalle-taza',
+    loadChildren: () => import('./paginas/detalle-taza/detalle-taza.module').then( m => m.DetalleTazaPageModule)
+  },
+  {
+    path: 'categoria-taza',
+    loadChildren: () => import('./paginas/categoria-taza/categoria-taza.module').then( m => m.CategoriaTazaPageModule)
+  },
+  {
+    path: 'categoria-abrigo',
+    loadChildren: () => import('./paginas/categoria-abrigo/categoria-abrigo.module').then( m => m.CategoriaAbrigoPageModule)
+  },
+  {
+    path: 'categoria-camiseta',
+    loadChildren: () => import('./paginas/categoria-camiseta/categoria-camiseta.module').then( m => m.CategoriaCamisetaPageModule)
+  },
+  {
+    path: 'categoria-gorra',
+    loadChildren: () => import('./paginas/categoria-gorra/categoria-gorra.module').then( m => m.CategoriaGorraPageModule)
+  },
+  {
+    path: 'contacto',
+    loadChildren: () => import('./paginas/contacto/contacto.module').then( m => m.ContactoPageModule)
+  },
 ];
 
 @NgModule({
