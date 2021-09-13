@@ -1,9 +1,24 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>carrito</ion-title>
+    <ion-title>Carrito</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>    
+    <ion-searchbar mode="md" placeholder="Busca camisetas, abrigos, tazas... " ></ion-searchbar>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title size="small">Total a pagar: RD$2400</ion-title>
+    <ion-button size="small" slot="end">Proceder a pagar</ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+<!-- Item as a Button -->
+<ion-item button (click)="buttonClick()">
+  <ion-label>
+    Button Item
+  </ion-label>
+</ion-item>
+
 
 </ion-content>
