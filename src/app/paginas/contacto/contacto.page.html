@@ -1,9 +1,41 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>contacto</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title size="large">Mundo Merch</ion-title>
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
+  <ion-item>
+    <h1>Contacta con nosotros</h1>
+  </ion-item>
+
+  <ion-item-divider >
+  </ion-item-divider>
+  <ion-card>
+    <ion-card-content>
+      
+      <ion-item lines="full">
+        <ion-label position="floating">Asunto o tema de contacto</ion-label>
+        <ion-input type="text" required></ion-input>
+      </ion-item>
+      <ion-label></ion-label>
+    <ion-item>
+      <ion-label position="floating">Description</ion-label>
+      <ion-textarea>
+
+      </ion-textarea>
+    </ion-item>
+  </ion-card-content>
+  <ion-row>
+    <ion-col>
+    <ion-button type="button"  color="primary" expand="block">Enviar</ion-button>
+  </ion-col>
+  </ion-row>
+    
+  </ion-card>
 
 </ion-content>
