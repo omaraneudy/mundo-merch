@@ -1,9 +1,79 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>detalle-abrigo</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title size="large">Mundo Merch</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>    
+    <ion-searchbar mode="md" placeholder="Busca camisetas, abrigos, tazas... " ></ion-searchbar>
+
   </ion-toolbar>
 </ion-header>
 
+
+
 <ion-content>
+
+
+
+  <ion-item-divider>
+    <ion-label>
+      Aquí podrás encontrar productos con diseños originales y a buen precio
+    </ion-label>
+  </ion-item-divider>
+
+
+
+  <ion-card>
+    <ion-img src="assets/images/abrigo_tierra.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>RD$750</ion-card-subtitle>
+      <ion-card-title>Abrigo Logo Tierra</ion-card-title>    
+      
+      <ion-item>
+        <ion-label>Color</ion-label>
+        <ion-select>
+          <ion-select-option value="brown">Negro</ion-select-option>
+          <ion-select-option value="blonde">Blanco</ion-select-option>
+          <ion-select-option value="black">Gris</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Size</ion-label>
+        <ion-select>
+          <ion-select-option value="brown">XL</ion-select-option>
+          <ion-select-option value="blonde">L</ion-select-option>
+          <ion-select-option value="black">M</ion-select-option>
+          <ion-select-option value="black">XS</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Cantidad</ion-label>
+        <ion-select>
+          <ion-select-option value="brown">1</ion-select-option>
+          <ion-select-option value="blonde">2</ion-select-option>
+          <ion-select-option value="black">3</ion-select-option>
+          <ion-select-option value="black">4</ion-select-option>
+        </ion-select>
+      </ion-item>
+</ion-card-header>
+  </ion-card>
+<ion-row>
+  <ion-col>
+    <ion-button color="primary" expand="block" size="large" routerLink="/detalle-camiseta">Comprar</ion-button>
+  </ion-col>
+</ion-row>
+
+
+  <ion-item-divider>
+    <ion-label class="ion-text-wrap">
+      <ion-text size="large">
+        Abrigo de algodón con diseño estilo plano del planeta tierra
+      </ion-text>
+    </ion-label>
+  </ion-item-divider>
+      
+
 
 </ion-content>

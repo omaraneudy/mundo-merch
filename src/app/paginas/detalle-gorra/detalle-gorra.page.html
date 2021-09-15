@@ -1,9 +1,56 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>detalle-gorra</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Mundo Merch</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+<ion-item>
+  <h1>
+    Finalización de compra
+  </h1>
+</ion-item>
+<ion-item-divider class="">
+<label class="ion-text-wrap">
+  <ion-text>Elija el metodo de pago y dirección de envío</ion-text>
+</label>
+</ion-item-divider>
+<ion-card>
+ <ion-card-content>
+  <ion-item>
+    <ion-label>Método de pago</ion-label>
+    <ion-select>
+      <ion-select-option value="brown">PayPal</ion-select-option>
+      <ion-select-option value="blonde">Tarjeta de crédito</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Dirección de envío</ion-label>
+    <ion-select>
+      <ion-select-option value="brown">C/ Los lázaros #5, Jarabacoa</ion-select-option>
+      <ion-select-option value="blonde">Agregar nueva dirección</ion-select-option>
+    </ion-select>
+  </ion-item>
 
+ </ion-card-content>
+</ion-card>
+<ion-item-divider>
+
+
+</ion-item-divider>
+<ion-row>
+  <ion-col>
+    <h2>Total a pagar: RD$750</h2>
+  </ion-col>
+</ion-row>
+<ion-card>
+  <ion-row>
+    <ion-col>
+      <ion-button type="button" size="large" color="primary" expand="block">Realizar pago</ion-button>   
+    </ion-col>
+  </ion-row>
+</ion-card>
 </ion-content>
